@@ -1,0 +1,21 @@
+---
+- name: Set up cluster-wide configuration
+  hosts: cluster
+  gather_facts: true
+  become: true
+
+  vars_files:
+    - config.yml
+  tasks:
+  - name: Get uptime information
+    ansible.builtin.shell: /usr/bin/uptime
+    register: result
+
+  - name: Print return information from the previous task
+    ansible.builtin.debug: 
+      msg:  
+        uptime: "{{ var1 }}"
+        user name: "{{ var2 }}"
+    vars:
+      var1: "{{ result.stdout }}"
+      var2: "{{ user_full_name }}"

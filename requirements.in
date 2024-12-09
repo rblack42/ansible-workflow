@@ -1,0 +1,6 @@
+# documentation: Sphinx dependencies
+sphinx
+sphinx-rtd-theme
+sphinxcontrib-bibtex
+sphinxcontrib-tikz
+sphinxcontrib-programoutput

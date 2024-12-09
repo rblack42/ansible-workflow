@@ -1,0 +1,44 @@
+Measuring Forces
+################
+
+..  include::   /header.inc
+
+There are two kinds of forces used in preparing a rubber motor for flight:
+*torque* which is a rotational force, and *tension* which is a linear force.
+Since torque is what spins the propeller, most modelers focus on this one.
+However, tension is important as well. The tension in the motor tends to bend
+the motor stick leading to sometimes unexpected trim problems. 
+
+Torque Meters
+=============
+
+Many indoor flyers use a Torque Meter* to gauge the power that the rubber will
+provide to the propeller. Probably the most common kind of *torque meter* uses
+a length of steel wire attached to a pointer that indicates the torque as the
+wire twists as the motor is wound.
+
+Here is an example, available from `LaserCutPlanes <https://www.lasercutplanes.com/product/dirt-cheap-torque-meter/>`_.
+
+..	image::	../../_static/torque-meter.jpg
+	:align:	center
+	:width: 300
+
+Tension Meters
+==============
+
+Measuring tension used to be a common thing. In the old days, scales were often
+hanging up in grocery stores and you weighed something by placing it in a tray.
+The weight of the thing in the tray was indicated by a dial which actually
+measured the tension on the hokk holding the scale up/ Today, a modern tension
+guage is most likely digital and looks like this:
+
+..  image:: ../../_static/tension-meter.jpg
+    :align: center
+    :width: 200
+
+This device is available from *American Weigh Scales* through Amazon and was
+used by Don Slusarczyk in an article he wrote, *Testing Rubber for Strength" in
+the July 2017 issue of *Model Aviation* :cite:`slusarczyk2017`.
+
+
+

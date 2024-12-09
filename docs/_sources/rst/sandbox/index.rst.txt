@@ -1,0 +1,14 @@
+Project Sandbox
+###############
+
+..  include::   /header.inc
+
+Everything in this section is a work in progress. It is a place where I keep
+notes that will be useful in the main project development. No content here is
+intended to be published. It is included only for reference,
+
+..  toctree::
+    :maxdepth: 2
+
+    hodson-flight-data
+    testing

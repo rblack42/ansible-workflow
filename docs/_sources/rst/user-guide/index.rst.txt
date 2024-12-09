@@ -1,0 +1,26 @@
+Part 4 - R2T3 User Guide
+########################
+
+..  include::   /header.inc
+
+The R2T3 machine is intended to support a variety of purposes. Obviously, it is
+intended for testing motors, either short test motors, or actual flight-ready
+motors. The torque, tension component together with the visual display can be
+separated from the machine and used at a flying site. If you really want to go
+crazy, you could take the entire system, even though it might be too long for
+your vehicle, to the site and let it wind your motora before each flight. 
+
+In this section, we will go over each component of the machine and explain how
+it is used. Example data from actual tests will be shown as we examine the
+various components. 
+
+All components are physically mounted on a single wooden plank to keep things
+organized and simple to set up for use. The major components are these:
+
+- linear slide and winding motor
+- Torque/Tension meter
+- Control computer system
+- visual display
+
+It is possible to use a laptop with a wireless connection to control the
+machine if desired. 

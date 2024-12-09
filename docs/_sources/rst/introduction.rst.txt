@@ -1,0 +1,119 @@
+Introduction
+############
+
+..  include::   /header.inc
+
+What is **R2T3**? Well, how about *Roie's Rubber Torque and Tension Tester*? This
+article details how I built a computer controlled test fixture that is being
+used to gather data on the performance of rubber motors used for indoor model
+airplanes. My intent is to use the data being gathered to build a mathematical
+model for rubber that can be used to help predict how a design will fly. This
+article is part of my |MM|_ project where I to document my research work in
+indoor model aviation.  
+
+This is my third article in that effort. The first article used |OSC|_ and
+|PY|_ to demonstrate how you can design a indoor airplane using some
+fascinating tools :cite:`black2021`. The second article used a number of
+advanced |PY|_ tools to demonstrate how you can analyze a design and attempt
+to predict flight times for that model :cite:`black2022`. If you read that last
+article, you might recall that the rubber (and propeller) models used were a
+bit weak. My efforts now are intended to fix those problems. To do that I need to be able to test rubber motors to see how they perform. Hopefully, the data I collect will help be build a theoretical model of an indoor motor suitable for use inc analyzingindoor models.
+
+Background
+==========
+
+At the ripe old age of eight, I started on a quest to figure out how a certain
+model airplane managed to fly. The airplane was a rubber powered `Henderson
+Gadfly <https://outerzone.co.uk/plan_details.asp?ID=2475>`_ from the April, 1955 edition of *Model Airplane News*. This model
+was built by a neighbor on my newspaper route, and I saw him fly it
+one evening while I was delivering papers. I was fascinated by what I saw and
+how amazing that flight was. I had to know how all of that happened!
+
+My quest took me into a career as an aerospace Engineer in the USAF, and into
+a second career as a Professor of Computer Science at Austin Community College
+in Austin, Texas. Along the way, I discovered a passion for doing research and
+digging into the mathematics of flight, then using computers of all kinds to try
+to solve the mathematical equations that can tell us how a flight vehicle will
+fly, even before we build anything real!
+
+When I finally retired, I decided to continue my research work, but this time
+apply it to something I started doing while in high school -- designing,
+building, and flying indoor model airplanes. 
+
+
+Scientific Research
+-------------------
+
+Generally, scientific research falls into one of two major categories.  The
+first major category, *Experimental Research*, studies the behavior of some
+system as it performs in its natural environment. In aeronautics, that means we
+test an actual airplane in flight, or study a model of that vehicle in
+something like a wind tunnel.  *Theoretical Research*, the second major category,
+seeks to generate a mathematical model of the system we are studying. As it
+turns out, we need both kinds of research to move forward.  A theory must be
+shown to actually predict how a real system will perform. We *validate* the
+theory using data from experimental research. If our theory produces results
+that closely match the experimental data, we gain trust in the theory. Without
+that trust, using the theory to predict anything is risky!
+
+Project Goal
+============
+
+As mentioned above, I want to build a mathematical model of an indoor rubber
+motor. In researching other work in this area, I have found a number of studies
+that have resulted in some simple tools for predicting the number of turns a
+motor can sustain before breaking :cite:`slusarczyk2014`, and how much tension a
+motor generates :cite:`slusarczyk2017`, :cite:`pearce1979a` and :cite:`pearce1979b`. I have also found some data on the torque vs turns for some motors :cite:`tenny1968`.
+My hope is to base my model on current research into the physics of rubber, and
+I have found quite a number of references into that area.
+
+In order to validate my mathematical model, I need experimental data. Most
+indoor flyers measure the simple things: rubber size and loop length, weight,
+number of turns used for each flight, and, if they have the equipment, the
+torque provided to the propeller at launch for each flight. They most also
+record the flight times and, perhaps, the number of turns remaining when the
+flight ends. All good data, but not detailed enough to work on a better
+mathematical model of the rubber motor.
+
+My hope is that the **R2T3** device described in this article will help me
+gather much more detailed data on what happens when we wind up a motor for a
+flight. At present, I have a prototype test device, but I am working to build a
+second version that is both cheaper to construct, and better suited for testing
+actual flight-worthy motors.
+
+..  note::
+
+    The project is being hosted on |GH|_. Visit the `Project Home Link <https://github.com/rblack42/mmR2T3>`_
+
+The Project Flow
+================
+
+The rest of this article will proceed in four parts:
+
+Part 1 - Requirements
+---------------------
+
+Here we will cover the requirements for the test device. This involves looking
+at how we use a rubber motor in the course of a flight. The goal here is to
+detail the data items we intend to collect.
+
+Part 2 - Hardware
+-----------------
+
+Once we know what data we want to collect, we need to put together the hardware
+that can provide the individual data items. In some cases, the parts we need
+are readily available. In others, we need to build the needed parts. I will use
+|OSC|_ to detail those parts.
+
+Part 3 - Software
+-----------------
+
+The basic requirement in this project is to use computers to control the
+testing process. I will be using |PY|_ to create all project code. The
+development of that code will be shown here.
+
+Part 4 - Sample Output
+----------------------
+
+In this final section, I will present example output from the test device. This
+section is presented in the form of a user's manual for the **R2T3** machine.

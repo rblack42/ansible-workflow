@@ -1,0 +1,205 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Introduction &mdash; ansible-work 0.1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=01f34227"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            ansible-work
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../zbibliography.html">Bibliography</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ansible-work</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Introduction</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/rst/introduction.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Link to this heading"></a></h1>
+<p>Read time: 21 minutes (5400 words)</p>
+<p>What is <strong>R2T3</strong>? Well, how about <em>Roie’s Rubber Torque and Tension Tester</em>? This
+article details how I built a computer controlled test fixture that is being
+used to gather data on the performance of rubber motors used for indoor model
+airplanes. My intent is to use the data being gathered to build a mathematical
+model for rubber that can be used to help predict how a design will fly. This
+article is part of my <a class="reference external" href="https://github.com/rblack42/math-magik"><em>Math Magik</em></a> project where I to document my research work in
+indoor model aviation.</p>
+<p>This is my third article in that effort. The first article used <a class="reference external" href="https://openscad.org"><em>OpenSCAD</em></a> and
+<a class="reference external" href="https://www.python.org"><em>Python</em></a> to demonstrate how you can design a indoor airplane using some
+fascinating tools <span id="id1">[<a class="reference internal" href="../zbibliography.html#id2" title="Roie Black. Designing an indoor model using openscad. NFFS Symposium, pages 65–84, 2021.">Bla21</a>]</span>. The second article used a number of
+advanced <a class="reference external" href="https://www.python.org"><em>Python</em></a> tools to demonstrate how you can analyze a design and attempt
+to predict flight times for that model <span id="id2">[<a class="reference internal" href="../zbibliography.html#id3" title="Roie Black. Predicting indoor flight times using python. NFFS Symposium, pages 65–84, 2022.">Bla22</a>]</span>. If you read that last
+article, you might recall that the rubber (and propeller) models used were a
+bit weak. My efforts now are intended to fix those problems. To do that I need to be able to test rubber motors to see how they perform. Hopefully, the data I collect will help be build a theoretical model of an indoor motor suitable for use inc analyzingindoor models.</p>
+<section id="background">
+<h2>Background<a class="headerlink" href="#background" title="Link to this heading"></a></h2>
+<p>At the ripe old age of eight, I started on a quest to figure out how a certain
+model airplane managed to fly. The airplane was a rubber powered <a class="reference external" href="https://outerzone.co.uk/plan_details.asp?ID=2475">Henderson
+Gadfly</a> from the April, 1955 edition of <em>Model Airplane News</em>. This model
+was built by a neighbor on my newspaper route, and I saw him fly it
+one evening while I was delivering papers. I was fascinated by what I saw and
+how amazing that flight was. I had to know how all of that happened!</p>
+<p>My quest took me into a career as an aerospace Engineer in the USAF, and into
+a second career as a Professor of Computer Science at Austin Community College
+in Austin, Texas. Along the way, I discovered a passion for doing research and
+digging into the mathematics of flight, then using computers of all kinds to try
+to solve the mathematical equations that can tell us how a flight vehicle will
+fly, even before we build anything real!</p>
+<p>When I finally retired, I decided to continue my research work, but this time
+apply it to something I started doing while in high school – designing,
+building, and flying indoor model airplanes.</p>
+<section id="scientific-research">
+<h3>Scientific Research<a class="headerlink" href="#scientific-research" title="Link to this heading"></a></h3>
+<p>Generally, scientific research falls into one of two major categories.  The
+first major category, <em>Experimental Research</em>, studies the behavior of some
+system as it performs in its natural environment. In aeronautics, that means we
+test an actual airplane in flight, or study a model of that vehicle in
+something like a wind tunnel.  <em>Theoretical Research</em>, the second major category,
+seeks to generate a mathematical model of the system we are studying. As it
+turns out, we need both kinds of research to move forward.  A theory must be
+shown to actually predict how a real system will perform. We <em>validate</em> the
+theory using data from experimental research. If our theory produces results
+that closely match the experimental data, we gain trust in the theory. Without
+that trust, using the theory to predict anything is risky!</p>
+</section>
+</section>
+<section id="project-goal">
+<h2>Project Goal<a class="headerlink" href="#project-goal" title="Link to this heading"></a></h2>
+<p>As mentioned above, I want to build a mathematical model of an indoor rubber
+motor. In researching other work in this area, I have found a number of studies
+that have resulted in some simple tools for predicting the number of turns a
+motor can sustain before breaking <span id="id3">[<a class="reference internal" href="../zbibliography.html#id7" title="Donald Slusarczyk. Graphical method for determining maximum rubber turns for indoor model aircraft. NFFS Symposium, pages 47–50, 2014.">Slu14</a>]</span>, and how much tension a
+motor generates <span id="id4">[<a class="reference internal" href="../zbibliography.html#id8" title="Donald Slusarczyk. Testing rubber for strength. Model Aviation, pages 130–131, July 2017.">Slu17</a>]</span>, <span id="id5">[<a class="reference internal" href="../zbibliography.html#id9" title="Fred Pearce. Rubber – all you need to know - part 1. Model Aviation, pages 59–63, March 1979.">Pea79a</a>]</span> and <span id="id6">[<a class="reference internal" href="../zbibliography.html#id10" title="Fred Pearce. Rubber – all you need to know - part 2. Model Aviation, pages 68–71,120, April 1979.">Pea79b</a>]</span>. I have also found some data on the torque vs turns for some motors <span id="id7">[<a class="reference internal" href="../zbibliography.html#id6" title="Bud Tenny. Choice of rubber motor for low ceiling indor. NFFS Symposium, pages 77–82, 1968.">Ten68</a>]</span>.
+My hope is to base my model on current research into the physics of rubber, and
+I have found quite a number of references into that area.</p>
+<p>In order to validate my mathematical model, I need experimental data. Most
+indoor flyers measure the simple things: rubber size and loop length, weight,
+number of turns used for each flight, and, if they have the equipment, the
+torque provided to the propeller at launch for each flight. They most also
+record the flight times and, perhaps, the number of turns remaining when the
+flight ends. All good data, but not detailed enough to work on a better
+mathematical model of the rubber motor.</p>
+<p>My hope is that the <strong>R2T3</strong> device described in this article will help me
+gather much more detailed data on what happens when we wind up a motor for a
+flight. At present, I have a prototype test device, but I am working to build a
+second version that is both cheaper to construct, and better suited for testing
+actual flight-worthy motors.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The project is being hosted on <a class="reference external" href="https://github.com"><em>GitHub</em></a>. Visit the <a class="reference external" href="https://github.com/rblack42/mmR2T3">Project Home Link</a></p>
+</div>
+</section>
+<section id="the-project-flow">
+<h2>The Project Flow<a class="headerlink" href="#the-project-flow" title="Link to this heading"></a></h2>
+<p>The rest of this article will proceed in four parts:</p>
+<section id="part-1-requirements">
+<h3>Part 1 - Requirements<a class="headerlink" href="#part-1-requirements" title="Link to this heading"></a></h3>
+<p>Here we will cover the requirements for the test device. This involves looking
+at how we use a rubber motor in the course of a flight. The goal here is to
+detail the data items we intend to collect.</p>
+</section>
+<section id="part-2-hardware">
+<h3>Part 2 - Hardware<a class="headerlink" href="#part-2-hardware" title="Link to this heading"></a></h3>
+<p>Once we know what data we want to collect, we need to put together the hardware
+that can provide the individual data items. In some cases, the parts we need
+are readily available. In others, we need to build the needed parts. I will use
+<a class="reference external" href="https://openscad.org"><em>OpenSCAD</em></a> to detail those parts.</p>
+</section>
+<section id="part-3-software">
+<h3>Part 3 - Software<a class="headerlink" href="#part-3-software" title="Link to this heading"></a></h3>
+<p>The basic requirement in this project is to use computers to control the
+testing process. I will be using <a class="reference external" href="https://www.python.org"><em>Python</em></a> to create all project code. The
+development of that code will be shown here.</p>
+</section>
+<section id="part-4-sample-output">
+<h3>Part 4 - Sample Output<a class="headerlink" href="#part-4-sample-output" title="Link to this heading"></a></h3>
+<p>In this final section, I will present example output from the test device. This
+section is presented in the form of a user’s manual for the <strong>R2T3</strong> machine.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Roie R. Black.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

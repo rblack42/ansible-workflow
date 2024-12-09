@@ -1,0 +1,40 @@
+Part 1 = R2T3 Requirements
+##########################
+
+..  include::   /header.inc
+
+I began this project as part of my research into how indoor rubber motors work.
+That research is intended to help me build a theoretical model of the motor
+that can be used in design studies by predicting how the motor will perform in
+flight. Rubber has been studied for quite a long time, as the range of studies
+I have found prove. Unfortunately, most of the studies look at rubber as it is
+used in commercial applications. Rubber strips subjected to external forces
+like stretching and winding to provide power to a simple propeller has not seen
+a lot of study. 
+
+I do not claim to be either a chemist, or a physicist skilled enough to do a
+professional study here. But I am skilled in using computers to solve some
+fairly difficult research problems. My  PhD research (unfortunately incomplete)
+involved developing Computational Fluid Dynamics code to analyze hypersonic
+flow-fields around shuttle-like vehicles. I am going to branch out from that
+world and explore the physics of rubber and see what I can do to help out my
+fellow model builders.
+
+To do this work, I need a reliable source of data that can used to validate any
+theory I come up with. That means I need experimental data derived from testing
+actual rubber motors. While it is possible to conduct these tests manually,
+that goes against my other passion: using small computers to drive hardware.
+Accordingly, I decided to build a machine that can do my testing and record
+data all under computer control. 
+
+This section will lay out the requirements I am using to construct my test
+machine. It will be broken up into subsections detailing the phases in the life
+of a typical rubber motor.
+
+
+..  toctree::
+    :maxdepth: 2
+
+    
+    preparing-the-motor
+    winding-techniques

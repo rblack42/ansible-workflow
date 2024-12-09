@@ -1,0 +1,24 @@
+Part 3 - Software Development
+#############################
+
+..  include::   /header.inc
+
+The **R2T3** device has a number of parts that need support from a computer to
+manage their operation:
+
+- Linear slide gantry (stepper motor)
+- Winding motor control (DC speed control)
+- Wind Counter (DC motor counter interface)
+- Torque/Tension measurements (Load cell interface)
+- User interface (Touch screen interface)
+
+All of these functions can be provided by a variety of |PY|_ libraries. Our job
+will be to interface these support tools to create a useable tool for the model
+builder.
+
+..  toctree::
+    :maxdepth: 2
+
+    stepper-motor-control
+    
+

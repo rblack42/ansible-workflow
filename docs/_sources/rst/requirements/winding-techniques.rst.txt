@@ -1,0 +1,114 @@
+Winding Techniques
+##################
+
+..  include::   /header.inc
+
+Indoor flyers use a variety of techniques to get a model ready for flight. In
+informal settings, the winding is simple: hook up a winder, pull the motor out
+some distance, and pack in winds. The exact distance pulled and the wind count
+is determined by "feel" and watching how the model behaves on previous flights. 
+
+In competitive settings, things get more serious. I found two articles in old
+issues of |INAV|_ that provide interesting guidance; one by Stan Chiltion and the second by Phil Alvirez:
+
+Stan Chilton's Winding Scheme
+=============================
+
+In issue 85 (June, 1995) of the |INAV|_ newsletter, Stan Chilton published
+his technique for winding indoor motors :cite:`chilton1995`. Here is his
+scheme:
+
+Break-In
+--------
+
+Stan's scheme assumes that you know the breaking length of your motor. Figuring
+this out can be done by experiment for a particular batch. (Maybe we need to
+use our tester to do this!)
+
+1. Stretch to 95% of breaking length
+3. Hold for five minutes
+4. Lubricate the motor
+
+Winding for Flight
+------------------
+
+This is a summary of the process Stan described in his article:
+
+1. Stretch the motor "just short of breaking", up to 10 times the original loop length.
+2. Wind slowly to 40 turns keeping the stretch constant
+3. Walk in to keep motor slack enough not to break adding 500 turns
+4. Stretch back out to the max length again
+5. Wind slowly decreasing stretch to keep torque constant for 300 turns
+6. Repeat step 4.
+7. Repeat step 5.Repeat step 4 for 100 turns
+8. Repeat Step 4.
+9. Repeat steps 7 and 8 until 1800-1900 turns (torque will increase)
+10. Repeat step 7 at for 50 turns
+11. Repeat step 4 - as far as it will go
+12. Repeat step 10 for 50 turns
+13. Optionally continue to desired max count
+14. Back off to desired launch torque at the launch motor length (hook to hook)
+15. Massage out knots as much as possible
+
+Obviously, this scheme has a number of unknowns in it: breaking length, desired
+max winding count, back off count, launch torque. Another interesting factor in
+Stan's winding scheme involves looking at how the measured torque changes as
+the applied stretch moves up or down. Most torque curves from modeler data only
+indicated torque verses wind count.
+
+Stan mentions that Jim Clem, another noted flyer, never stretches more than 5-6
+time the loop length. Stan noted that then **Tan II** rubber when his article
+was published could handle the factor of ten stretch so obviously this depends
+on the rubber batch you are using.
+
+Let's play with this scheme and make a few assumptions for one of Gary Hodges
+flights. 
+
+Alvirez on Winding
+==================
+
+Phil Alvirez published another note on winding :cite:`alvirez1996`. Here is his scheme:
+
+Stretching to 4-6 times loop length
+-----------------------------------
+
+1. Stretch motor to desired length
+2. Wind rapidly to 50% of desired turns
+3. Rest for two minutes, smoothing knots along length
+4. Give a "slack" and return to initial stretch
+5. Wind slowly, watching torque
+6. When torque rises, stop and slack until it drops.
+7. Pull back and watch torque
+8. If torque remains steady, continue winding. 
+9. Repeat steps 5-8 until desired/turn/torque is reached
+10. Apply back-off as needed to reach final torque
+
+Stretching 9 times loop length
+------------------------------
+
+1. Wind slowly, relaxing stretch so you reach the final length at 25% of desired count
+3. Stretch back out to just short of breaking
+4. Repeat step 1 until 15% more turns are reached
+.
+5. Repeat steps 3-4 until you reach 95% of desired turns
+6. Break the final %5 into two cycles.
+7. Apply back-off as needed to reach final torque
+
+
+Winding the Wart
+================
+
+Gary estimated that he stretches a 16 inch motor to about five feet, then puts
+in about 500 turns. He them stretches the motor to about six feet and winds to
+his target count, moving in to reach the flight hook-to-hook length as he
+reaches the desired count. He did not record a back off number. 
+
+On Gary's record flight, his motor data gave these numbers:
+
+- loop length: 18 inches 
+- initial stretch = 5.5 feet (scaled using above comment on Gary's stretching)
+- Predicted breaking wind count wind count: 3716
+- Flight wind count: 3660
+- flight launch torque: 3.1 inch-ounces
+
+In my 2022 NFFS Symposium article I generated an example torque curve for this motor. We will use that 

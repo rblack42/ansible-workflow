@@ -1,0 +1,10 @@
+Stepper Motor Control
+#####################
+
+**R2T3** uses two different stepper motors. The primary motor is a NEMA-23 motor that is part of the linear slide mechanism. The second stepper is optionally used for motor winding. Both are powered by a 12-volt DC supply.
+
+Nema-23 Controller
+==================
+
+Nema-17 Controller
+==================
